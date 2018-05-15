@@ -2,10 +2,9 @@ pipeline{
     agent any
     stages
     {
-        stage("get source code"){
-            step{
-                   echo 'api build started..'
-                   checkout scm
+        stage("checkout"){
+            steps {
+                checkout scm
             }
       }
       
