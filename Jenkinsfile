@@ -2,7 +2,7 @@ node{
     stage("build started")
       {
         echo 'api build started..'
-        git 'https://github.com/dhanushreemc/Zpui-api.git'
+        git 'https://github.com/dhanushreemc/ZPAPI.git'
       }
       
       stage("build docker image"){
