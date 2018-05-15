@@ -15,7 +15,7 @@ pipeline{
             }
       }
         
-        stage('Push image') {
+    /*    stage('Push image') {
             steps {
              withDockerRegistry([credentialsId: 'docker-hub-credentials', url: 'https://hub.docker.com/']) {
            sh 'docker tag zpui-api:1.1 pavan52/zpui-api:1.1'
@@ -24,7 +24,7 @@ pipeline{
           // app.push("latest")
        }
         }
-        }
+        } */
   
         stage("Launch service"){
            steps {
