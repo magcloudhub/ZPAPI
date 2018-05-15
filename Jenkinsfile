@@ -1,8 +1,12 @@
-node{
-    stage("build started")
-      {
-        echo 'api build started..'
-        git 'https://github.com/dhanushreemc/ZPAPI.git'
+pipeline{
+    agent any
+    stages
+    {
+        stage("get source code"){
+            step{
+                   echo 'api build started..'
+                   checkout scm
+            }
       }
       
       stage("build docker image"){
@@ -17,4 +21,5 @@ withDockerRegistry([credentialsId: 'Docker-ID', url: 'https://index.docker.io/v1
          sh 'docker push docker.io/pavan52/Zpui-api:1.0'
          sh 'docker push docker.io/pavan52/Zpui-api:1.0'              }
        }
+    }
 }
