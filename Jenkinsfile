@@ -22,5 +22,5 @@ withDockerRegistry([credentialsId: '1df43e81-cf69-401c-a047-af5549f03de4', url: 
          sh 'docker push docker.io/pavan52/zpui-api:1.1'            
 }
      }
-    
+    }
 }
