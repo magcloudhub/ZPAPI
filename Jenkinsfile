@@ -11,7 +11,7 @@ pipeline{
       
       stage("build docker image"){
             steps {
-                sh "docker build -t pavan52/Zpui-api:1.0 ."
+                sh "docker build -t ZPui-api:1.0 ."
             }
       }
       
