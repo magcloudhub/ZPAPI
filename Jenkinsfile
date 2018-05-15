@@ -21,6 +21,6 @@ pipeline{
     //     sh 'docker push docker.io/pavan52/Zpui-api:1.0'
       //   sh 'docker push docker.io/pavan52/Zpui-api:1.0'            
 //}
-  //     }
+     }
     
 }
