@@ -17,7 +17,7 @@ pipeline{
       
     stage("Tag & Push image"){
         steps {
-withDockerRegistry([credentialsId: '1df43e81-cf69-401c-a047-af5549f03de4', url: 'https://hub.docker.com']){
+withDockerRegistry([credentialsId: 'a2190088-0d8d-47ae-a558-fb0344c5524f', url: 'https://hub.docker.com/']) {
         sh 'docker tag docker.io/pavan52/zpui-api:1.1 docker.io/pavan52/zpui-api:1.1'
          sh 'docker push docker.io/pavan52/zpui-api:1.1'
          sh 'docker push docker.io/pavan52/zpui-api:1.1'            
