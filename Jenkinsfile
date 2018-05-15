@@ -24,6 +24,7 @@ pipeline{
            app.push("${env.BUILD_NUMBER}")
            app.push("latest")
        }
+        }
       
    /* stage("Tag & Push image"){
         steps {
